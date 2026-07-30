@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory | FreshCart POS</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container navbar-inner">
+            <a class="brand" href="/">
+                <img src="/images/market-basket.svg" alt="FreshCart logo">
+                <span>FreshCart POS</span>
+            </a>
+            <nav class="nav-links">
+                <a href="/">Home</a>
+                <a href="/dashboard">Dashboard</a>
+                <a href="/customer">Customers</a>
+                <a href="/product">Products</a>
+                <a href="/invoice">Invoices</a>
+                <a href="/payment">Payments</a>
+                <a href="/report">Reports</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page">
+        <section class="hero">
+            <div><h1>Balance shelves and stock levels.</h1><p>Move inventory from receiving to checkout smoothly and never run short.</p></div>
+            <div class="hero-image"><img src="/images/inventory.svg" alt="Inventory management illustration"></div>
+        </section>
+
+        <section class="grid-2">
+            <div class="card">
+                <div class="section-title"><div><h3>Add stock</h3><p>Update inventory on the go</p></div></div>
+                <div class="form-grid">
+                    <label>Product<select><option>Fresh Milk</option><option>Orange Juice</option></select></label>
+                    <label>Quantity<input type="number" placeholder="24"></label>
+                    <label>Minimum level<input type="number" placeholder="8"></label>
+                    <label>Location<input type="text" placeholder="Aisle 3"></label>
+                    <button type="button">Add stock</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="section-title"><div><h3>Inventory overview</h3><p>Low stock attention</p></div></div>
+                <table>
+                    <thead><tr><th>Product</th><th>Qty</th><th>Min</th></tr></thead>
+                    <tbody>
+                        <tr><td>Orange Juice</td><td>8</td><td>10</td></tr>
+                        <tr><td>Whole Bread</td><td>2</td><td>8</td></tr>
+                        <tr><td>Toilet Paper</td><td>1</td><td>6</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer"><div class="container">© 2026 FreshCart POS. Built for modern retail operations.</div></footer>
+</body>
+</html>

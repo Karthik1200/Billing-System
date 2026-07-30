@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories | FreshCart POS</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container navbar-inner">
+            <a class="brand" href="/">
+                <img src="/images/market-basket.svg" alt="FreshCart logo">
+                <span>FreshCart POS</span>
+            </a>
+            <nav class="nav-links">
+                <a href="/">Home</a>
+                <a href="/dashboard">Dashboard</a>
+                <a href="/customer">Customers</a>
+                <a href="/product">Products</a>
+                <a href="/invoice">Invoices</a>
+                <a href="/payment">Payments</a>
+                <a href="/report">Reports</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page">
+        <section class="hero">
+            <div><h1>Organize every aisle and shelf group.</h1><p>Group products into clear categories so staff can find them quickly.</p></div>
+            <div class="hero-image"><img src="/images/market-basket.svg" alt="Category organization illustration"></div>
+        </section>
+
+        <section class="grid-2">
+            <div class="card">
+                <div class="section-title"><div><h3>Create category</h3><p>Sort products for easier checkout</p></div></div>
+                <div class="form-grid">
+                    <label>Category name<input type="text" placeholder="Bakery"></label>
+                    <label>Description<textarea placeholder="Fresh pastries and breads"></textarea></label>
+                    <button type="button">Save category</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="section-title"><div><h3>Category list</h3><p>Store organization</p></div></div>
+                <table>
+                    <thead><tr><th>Name</th><th>Items</th><th>Status</th></tr></thead>
+                    <tbody>
+                        <tr><td>Fresh Produce</td><td>48</td><td><span class="tag success">Active</span></td></tr>
+                        <tr><td>Bakery</td><td>22</td><td><span class="tag success">Active</span></td></tr>
+                        <tr><td>Household</td><td>15</td><td><span class="tag warn">Needs update</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer"><div class="container">© 2026 FreshCart POS. Built for modern retail operations.</div></footer>
+</body>
+</html>

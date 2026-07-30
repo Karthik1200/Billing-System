@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoices | FreshCart POS</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container navbar-inner">
+            <a class="brand" href="/">
+                <img src="/images/market-basket.svg" alt="FreshCart logo">
+                <span>FreshCart POS</span>
+            </a>
+            <nav class="nav-links">
+                <a href="/">Home</a>
+                <a href="/dashboard">Dashboard</a>
+                <a href="/customer">Customers</a>
+                <a href="/product">Products</a>
+                <a class="active" href="/invoice">Invoices</a>
+                <a href="/payment">Payments</a>
+                <a href="/report">Reports</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page">
+        <section class="billing-shell">
+            <div class="card billing-card">
+                <div class="section-title">
+                    <div>
+                        <h3>Grocery billing</h3>
+                        <p>Fast checkout for essentials and household items</p>
+                    </div>
+                    <span class="tag success">POS</span>
+                </div>
+
+                <div class="search-row">
+                    <input type="text" placeholder="Search groceries, snacks, dairy...">
+                    <button type="button">Search</button>
+                </div>
+
+                <div class="product-grid">
+                    <article class="product-tile">
+                        <h4>Fresh Milk</h4>
+                        <p>1 liter carton</p>
+                        <div class="product-footer">
+                            <strong>$3.49</strong>
+                            <button type="button" class="secondary">Add</button>
+                        </div>
+                    </article>
+                    <article class="product-tile">
+                        <h4>Brown Bread</h4>
+                        <p>Soft loaf</p>
+                        <div class="product-footer">
+                            <strong>$2.10</strong>
+                            <button type="button" class="secondary">Add</button>
+                        </div>
+                    </article>
+                    <article class="product-tile">
+                        <h4>Orange Juice</h4>
+                        <p>Freshly squeezed</p>
+                        <div class="product-footer">
+                            <strong>$4.80</strong>
+                            <button type="button" class="secondary">Add</button>
+                        </div>
+                    </article>
+                    <article class="product-tile">
+                        <h4>Soap Pack</h4>
+                        <p>3-piece bundle</p>
+                        <div class="product-footer">
+                            <strong>$6.20</strong>
+                            <button type="button" class="secondary">Add</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="card billing-card cart-card">
+                <div class="section-title">
+                    <div>
+                        <h3>Current bill</h3>
+                        <p>Review selected items before checkout</p>
+                    </div>
+                </div>
+
+                <div class="cart-list">
+                    <div class="cart-item">
+                        <div>
+                            <strong>Fresh Milk</strong>
+                            <p>Qty: 2</p>
+                        </div>
+                        <span>$6.98</span>
+                    </div>
+                    <div class="cart-item">
+                        <div>
+                            <strong>Brown Bread</strong>
+                            <p>Qty: 1</p>
+                        </div>
+                        <span>$2.10</span>
+                    </div>
+                    <div class="cart-item">
+                        <div>
+                            <strong>Orange Juice</strong>
+                            <p>Qty: 1</p>
+                        </div>
+                        <span>$4.80</span>
+                    </div>
+                </div>
+
+                <div class="bill-summary">
+                    <div class="summary-row"><span>Subtotal</span><strong>$13.88</strong></div>
+                    <div class="summary-row"><span>Discount</span><strong>$0.00</strong></div>
+                    <div class="summary-row total"><span>Total</span><strong>$13.88</strong></div>
+                </div>
+
+                <div class="form-grid">
+                    <label>Customer<select><option>Walk-in</option><option>Anna Clark</option><option>James Lee</option></select></label>
+                    <label>Payment method<select><option>Cash</option><option>Card</option><option>Mobile Pay</option></select></label>
+                    <label>Notes<textarea placeholder="Add delivery note or discount details"></textarea></label>
+                    <button type="button">Print Bill</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer"><div class="container">© 2026 FreshCart POS. Built for modern retail operations.</div></footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payments | FreshCart POS</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container navbar-inner">
+            <a class="brand" href="/">
+                <img src="/images/market-basket.svg" alt="FreshCart logo">
+                <span>FreshCart POS</span>
+            </a>
+            <nav class="nav-links">
+                <a href="/">Home</a>
+                <a href="/dashboard">Dashboard</a>
+                <a href="/customer">Customers</a>
+                <a href="/product">Products</a>
+                <a href="/invoice">Invoices</a>
+                <a class="active" href="/payment">Payments</a>
+                <a href="/report">Reports</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page">
+        <section class="hero">
+            <div><h1>Track cash and card payments simply.</h1><p>Log every transaction and keep your cash drawer balanced at the end of the day.</p></div>
+            <div class="hero-image"><img src="/images/cashier.svg" alt="Payment processing illustration"></div>
+        </section>
+
+        <section class="grid-2">
+            <div class="card">
+                <div class="section-title"><div><h3>Record payment</h3><p>Fast checkout confirmations</p></div></div>
+                <div class="form-grid">
+                    <label>Invoice<select><option>#1024</option><option>#1025</option></select></label>
+                    <label>Amount<input type="number" placeholder="320.00"></label>
+                    <label>Method<select><option>Cash</option><option>Card</option><option>Bank Transfer</option></select></label>
+                    <label>Reference<input type="text" placeholder="TX-8849"></label>
+                    <button type="button">Record payment</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="section-title"><div><h3>Payment history</h3><p>Cashflow updates</p></div></div>
+                <table>
+                    <thead><tr><th>Ref</th><th>Method</th><th>Status</th><th>Amount</th></tr></thead>
+                    <tbody>
+                        <tr><td>TX-8849</td><td>Card</td><td><span class="tag success">Cleared</span></td><td>$320.00</td></tr>
+                        <tr><td>TX-8850</td><td>Cash</td><td><span class="tag warn">Pending</span></td><td>$98.00</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer"><div class="container">© 2026 FreshCart POS. Built for modern retail operations.</div></footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | FreshCart POS</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container navbar-inner">
+            <a class="brand" href="/">
+                <img src="/images/market-basket.svg" alt="FreshCart logo">
+                <span>FreshCart POS</span>
+            </a>
+            <nav class="nav-links">
+                <a href="/">Home</a>
+                <a class="active" href="/dashboard">Dashboard</a>
+                <a href="/customer">Customers</a>
+                <a href="/product">Products</a>
+                <a href="/invoice">Invoices</a>
+                <a href="/payment">Payments</a>
+                <a href="/report">Reports</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page">
+        <section class="hero">
+            <div>
+                <h1>Store operations at a glance.</h1>
+                <p>Monitor sales, invoices and inventory health without leaving the checkout floor.</p>
+            </div>
+            <div class="hero-image">
+                <img src="/images/inventory.svg" alt="Operations dashboard illustration">
+            </div>
+        </section>
+
+        <section class="stats-grid">
+            <div class="metric-card"><div class="label">Revenue</div><div class="value">$84,320</div></div>
+            <div class="metric-card"><div class="label">Outstanding</div><div class="value">$8,950</div></div>
+            <div class="metric-card"><div class="label">Invoices</div><div class="value">142</div></div>
+            <div class="metric-card"><div class="label">Payments</div><div class="value">121</div></div>
+        </section>
+
+        <section class="dashboard-grid">
+            <div class="panel">
+                <div class="panel-head"><h3>Recent activity</h3><span class="tag success">Live</span></div>
+                <table>
+                    <thead><tr><th>Date</th><th>Type</th><th>Reference</th><th>Amount</th></tr></thead>
+                    <tbody>
+                        <tr><td>Today</td><td>Invoice</td><td>#INV-1024</td><td>$428.90</td></tr>
+                        <tr><td>Today</td><td>Payment</td><td>#PMT-010</td><td>$320.00</td></tr>
+                        <tr><td>Yesterday</td><td>Stock</td><td>Milk restock</td><td>$156.00</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="panel">
+                <div class="panel-head"><h3>Low stock alerts</h3><span class="tag warn">4 items</span></div>
+                <div class="list-stack">
+                    <div class="list-item"><span>Fresh bread</span><strong>2 left</strong></div>
+                    <div class="list-item"><span>Orange juice</span><strong>4 left</strong></div>
+                    <div class="list-item"><span>Toilet paper</span><strong>1 left</strong></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer"><div class="container">© 2026 FreshCart POS. Built for modern retail operations.</div></footer>
+</body>
+</html>
